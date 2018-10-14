@@ -1,0 +1,255 @@
+LOCUS       NM_002122               1542 bp    mRNA    linear   PRI 25-SEP-2018
+DEFINITION  Homo sapiens major histocompatibility complex, class II, DQ alpha 1
+            (HLA-DQA1), mRNA.
+ACCESSION   NM_002122 XM_003846467 XM_351654
+VERSION     NM_002122.3
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1542)
+  AUTHORS   Ishibashi M, Yamaguchi H, Hirotani Y, Sakurada A, Endo T, Sugitani
+            M, Takayama T, Makishima M and Esumi M.
+  TITLE     Contradictory intrahepatic immune responses activated in high-load
+            hepatitis C virus livers compared with low-load livers
+  JOURNAL   Arch. Virol. 163 (4), 855-865 (2018)
+   PUBMED   29248968
+  REMARK    GeneRIF: HLA-DQA1 was expressed more than 9-fold higher in
+            high-load hepatitis C virus liver patients than in low-load HCV
+            liver patients.
+REFERENCE   2  (bases 1 to 1542)
+  AUTHORS   Kaga H, Komatsuda A, Omokawa A, Okuyama S, Mori K, Wakui H and
+            Takahashi N.
+  TITLE     Analysis of PLA2R1 and HLA-DQA1 sequence variants in Japanese
+            patients with idiopathic and secondary membranous nephropathy
+  JOURNAL   Clin. Exp. Nephrol. 22 (2), 275-282 (2018)
+   PUBMED   28849274
+  REMARK    GeneRIF: Allelic frequency distributions for SNP rs2187668 within
+            HLA-DQA1 were significantly different between the idiopathic
+            membranous nephropathy and control groups.
+REFERENCE   3  (bases 1 to 1542)
+  AUTHORS   Liu B, Deng T, Zhu L and Zhong J.
+  TITLE     Association of human leukocyte antigen (HLA)-DQ and HLA-DQA1/DQB1
+            alleles with Vogt-Koyanagi-Harada disease: A systematic review and
+            meta-analysis
+  JOURNAL   Medicine (Baltimore) 97 (7), e9914 (2018)
+   PUBMED   29443768
+  REMARK    GeneRIF: HLA-DQ4 positive patients have a higher risk of
+            Vogt-Koyanagi-Harada disease. In the results of alleles, risk
+            factor is HLA-DQA1*0301, while protective ones may include
+            HLA-DQA1*0103, 0401, 0501.
+            Review article
+REFERENCE   4  (bases 1 to 1542)
+  AUTHORS   Joshi PK, Pirastu N, Kentistou KA, Fischer K, Hofer E, Schraut KE,
+            Clark DW, Nutile T, Barnes CLK, Timmers PRHJ, Shen X, Gandin I,
+            McDaid AF, Hansen TF, Gordon SD, Giulianini F, Boutin TS,
+            Abdellaoui A, Zhao W, Medina-Gomez C, Bartz TM, Trompet S, Lange
+            LA, Raffield L, van der Spek A, Galesloot TE, Proitsi P, Yanek LR,
+            Bielak LF, Payton A, Murgia F, Concas MP, Biino G, Tajuddin SM,
+            Seppala I, Amin N, Boerwinkle E, Borglum AD, Campbell A, Demerath
+            EW, Demuth I, Faul JD, Ford I, Gialluisi A, Gogele M, Graff M,
+            Hingorani A, Hottenga JJ, Hougaard DM, Hurme MA, Ikram MA, Jylha M,
+            Kuh D, Ligthart L, Lill CM, Lindenberger U, Lumley T, Magi R,
+            Marques-Vidal P, Medland SE, Milani L, Nagy R, Ollier WER, Peyser
+            PA, Pramstaller PP, Ridker PM, Rivadeneira F, Ruggiero D, Saba Y,
+            Schmidt R, Schmidt H, Slagboom PE, Smith BH, Smith JA, Sotoodehnia
+            N, Steinhagen-Thiessen E, van Rooij FJA, Verbeek AL, Vermeulen SH,
+            Vollenweider P, Wang Y, Werge T, Whitfield JB, Zonderman AB,
+            Lehtimaki T, Evans MK, Pirastu M, Fuchsberger C, Bertram L,
+            Pendleton N, Kardia SLR, Ciullo M, Becker DM, Wong A, Psaty BM, van
+            Duijn CM, Wilson JG, Jukema JW, Kiemeney L, Uitterlinden AG,
+            Franceschini N, North KE, Weir DR, Metspalu A, Boomsma DI, Hayward
+            C, Chasman D, Martin NG, Sattar N, Campbell H, Esko T, Kutalik Z
+            and Wilson JF.
+  TITLE     Genome-wide meta-analysis associates HLA-DQA1/DRB1 and LPA and
+            lifestyle factors with human longevity
+  JOURNAL   Nat Commun 8 (1), 910 (2017)
+   PUBMED   29030599
+  REMARK    GeneRIF: Using genome-wide association meta-analysis authors
+            discover two regions associated with longevity (HLA-DQA1/DRB1 and
+            LPA).
+            Publication Status: Online-Only
+REFERENCE   5  (bases 1 to 1542)
+  AUTHORS   Mehraji Z, Farazmand A, Esteghamati A, Noshad S, Sadr M, Amirzargar
+            S, Yekaninejad MS and Amirzargar A.
+  TITLE     Association of Human Leukocyte Antigens Class I and II with Graves'
+            Disease in Iranian Population
+  JOURNAL   Iran J Immunol 14 (3), 223-230 (2017)
+   PUBMED   28919585
+  REMARK    GeneRIF: in the Iranian population, HLA-DQA1*0201 appears to have
+            protective role
+REFERENCE   6  (bases 1 to 1542)
+  AUTHORS   Taylor,A.K., Lebwohl,B., Snyder,C.L. and Green,P.H.R.
+  TITLE     Celiac Disease
+  JOURNAL   (in) Adam MP, Ardinger HH, Pagon RA, Wallace SE, Bean LJH, Stephens
+            K and Amemiya A (Eds.);
+            GENEREVIEWS((R));
+            (1993)
+   PUBMED   20301720
+REFERENCE   7  (bases 1 to 1542)
+  AUTHORS   Marsh SG and Bodmer JG.
+  TITLE     HLA class II nucleotide sequences, 1992
+  JOURNAL   Tissue Antigens 40 (5), 229-243 (1992)
+   PUBMED   1362295
+  REMARK    Correction to:[Tissue Antigens. 1990 Jan;35(1):1-8. PMID: 2305394]
+REFERENCE   8  (bases 1 to 1542)
+  AUTHORS   Lee KW, Johnson AH and Hurley CK.
+  TITLE     Two divergent routes of evolution gave rise to the DRw13 haplotypes
+  JOURNAL   J. Immunol. 145 (9), 3119-3125 (1990)
+   PUBMED   2212675
+REFERENCE   9  (bases 1 to 1542)
+  AUTHORS   Todd JA, Fukui Y, Kitagawa T and Sasazuki T.
+  TITLE     The A3 allele of the HLA-DQA1 locus is associated with
+            susceptibility to type 1 diabetes in Japanese
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 87 (3), 1094-1098 (1990)
+   PUBMED   2300572
+REFERENCE   10 (bases 1 to 1542)
+  AUTHORS   Kao HT, Gregersen PK, Tang JC, Takahashi T, Wang CY and Silver J.
+  TITLE     Molecular analysis of the HLA class II genes in two DRw6-related
+            haplotypes, DRw13 DQw1 and DRw14 DQw3
+  JOURNAL   J. Immunol. 142 (5), 1743-1747 (1989)
+   PUBMED   2493052
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AK130811.1, M20431.1,
+            BU617246.1 and AF533896.1.
+            This sequence is a reference standard in the RefSeqGene project.
+            On or before Aug 31, 2013 this sequence version replaced
+            XM_003846467.2, NM_002122.2.
+            
+            Summary: HLA-DQA1 belongs to the HLA class II alpha chain
+            paralogues. The class II molecule is a heterodimer consisting of an
+            alpha (DQA) and a beta chain (DQB), both anchored in the membrane.
+            It plays a central role in the immune system by presenting peptides
+            derived from extracellular proteins. Class II molecules are
+            expressed in antigen presenting cells (APC: B Lymphocytes,
+            dendritic cells, macrophages). The alpha chain is approximately
+            33-35 kDa. It is encoded by 5 exons; exon 1 encodes the leader
+            peptide, exons 2 and 3 encode the two extracellular domains, and
+            exon 4 encodes the transmembrane domain and the cytoplasmic tail.
+            Within the DQ molecule both the alpha chain and the beta chain
+            contain the polymorphisms specifying the peptide binding
+            specificities, resulting in up to four different molecules. Typing
+            for these polymorphisms is routinely done for bone marrow
+            transplantation. [provided by RefSeq, Jul 2008].
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: AK130838.1, SRR1163658.388665.1
+                                           [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA1965299, SAMEA1966682
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+            COMPLETENESS: complete on the 3' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-119               AK130811.1         1-119
+            120-1054            M20431.1           1-935
+            1055-1151           BU617246.1         16-112              c
+            1152-1542           AF533896.1         542-932
+FEATURES             Location/Qualifiers
+     source          1..1542
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="6"
+                     /map="6p21.32"
+     gene            1..1542
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /note="major histocompatibility complex, class II, DQ
+                     alpha 1"
+                     /db_xref="GeneID:3117"
+                     /db_xref="HGNC:HGNC:4942"
+                     /db_xref="MIM:146880"
+     exon            1..135
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    33..35
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /note="upstream in-frame stop codon"
+     CDS             54..821
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /note="HLA class II histocompatibility antigen, DQ alpha 1
+                     chain; MHC HLA-DQ alpha; MHC class II HLA-DQ-alpha-1; MHC
+                     class II DQA1; HLA-DCA; DC-alpha; DC-1 alpha chain"
+                     /codon_start=1
+                     /product="HLA class II histocompatibility antigen, DQ
+                     alpha 1 chain precursor"
+                     /protein_id="NP_002113.2"
+                     /db_xref="CCDS:CCDS4752.1"
+                     /db_xref="GeneID:3117"
+                     /db_xref="HGNC:HGNC:4942"
+                     /db_xref="MIM:146880"
+                     /translation="MILNKALLLGALALTTVMSPCGGEDIVADHVASCGVNLYQFYGP
+                     SGQYTHEFDGDEQFYVDLERKETAWRWPEFSKFGGFDPQGALRNMAVAKHNLNIMIKR
+                     YNSTAATNEVPEVTVFSKSPVTLGQPNTLICLVDNIFPPVVNITWLSNGQSVTEGVSE
+                     TSFLSKSDHSFFKISYLTFLPSADEIYDCKVEHWGLDQPLLKHWEPEIPAPMSELTET
+                     VVCALGLSVGLMGIVVGTVFIIQGLRSVGASRHQGPL"
+     sig_peptide     54..122
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /inference="COORDINATES: ab initio prediction:SignalP:4.0"
+     exon            136..384
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            385..666
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            667..841
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            842..1542
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /inference="alignment:Splign:2.1.0"
+     STS             842..1092
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+                     /standard_name="RH79899"
+                     /db_xref="UniSTS:90069"
+     regulatory      1511..1516
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+     polyA_site      1542
+                     /gene="HLA-DQA1"
+                     /gene_synonym="CELIAC1; DQ-A1; DQA1; HLA-DQA"
+ORIGIN      
+        1 acaattactc tacagctcag aacaccaact gctgaggctg ccttgggaag aggatgatcc
+       61 taaacaaagc tctgctgctg ggggccctcg ctctgaccac cgtgatgagc ccctgtggag
+      121 gtgaagacat tgtggctgac cacgttgcct cttgtggtgt aaacttgtac cagttttacg
+      181 gtccctctgg ccagtacacc catgaatttg atggagatga gcagttctac gtggacctgg
+      241 agaggaagga gactgcctgg cggtggcctg agttcagcaa atttggaggt tttgacccgc
+      301 agggtgcact gagaaacatg gctgtggcaa aacacaactt gaacatcatg attaaacgct
+      361 acaactctac cgctgctacc aatgaggttc ctgaggtcac agtgttttcc aagtctcccg
+      421 tgacactggg tcagcccaac accctcattt gtcttgtgga caacatcttt cctcctgtgg
+      481 tcaacatcac atggctgagc aatgggcagt cagtcacaga aggtgtttct gagaccagct
+      541 tcctctccaa gagtgatcat tccttcttca agatcagtta cctcaccttc ctcccttctg
+      601 ctgatgagat ttatgactgc aaggtggagc actggggcct ggaccagcct cttctgaaac
+      661 actgggagcc tgagattcca gcccctatgt cagagctcac agagactgtg gtctgtgccc
+      721 tggggttgtc tgtgggcctc atgggcattg tggtgggcac tgtcttcatc atccaaggcc
+      781 tgcgttcagt tggtgcttcc agacaccaag ggccattgtg aatcccatcc tggaagggaa
+      841 ggtgcatcgc catctacagg agcagaagaa tggacttgct aaatgaccta gcactattct
+      901 ctggcccgat ttatcatatc ccttttctcc tccaaatatt tctcctctca ccttttctct
+      961 gggacttaag ctgctatatc ccctcagagc tcacaaatgc ctttacattc tttccctgac
+     1021 ctcctgattt tttttttctt ttctcaaatg ttacctacaa agacatgcct ggggtaagcc
+     1081 acccggctac ctaattcctc agtaacctcc atctaaaatc tccaaggaag caataaattc
+     1141 cttttatgag atctatgtca aatttttcca tctttcatcc agggctgact gaaactatgg
+     1201 ctaataattg gggtactctt atgtttcaat ccaatttaac ctcatttccc agatcatttt
+     1261 tcatgtccag taacacagaa gccaccaagt acagtatagc ctgataatat gttgatttct
+     1321 tagctgacat taatatttct tgcttccttg tgttcccacc cttggcactg ccacccaccc
+     1381 ctcaattcag gcaacaatga aattaatgga taccgtctgc ccttggccca gaattgttat
+     1441 agcaaaaatt ttagaaccaa aaaataagtc tgtactaatt tcaatgtggc ttttaaaagt
+     1501 atgacagaga aataagttag gataaaggaa atttgaatct ca
+//

@@ -1,0 +1,29 @@
+Desarrollo:
+Lo primero que hicimos fue determinar un gen a utilizar, en este caso fue el HLA-DQA1 que se encuentra relacionado por ejemplo con la celiaquía.
+Luego, en la base de NCBI (National Center for Biotechnology Information) consultamos las secuencias de referencia, seleccionamos uno de los mRNA (NM_002122.3) y descargamos el transcripto del gen en formato GenBank.
+A continuación realizamos el script que hace lo siguiente:
+Utiliza el archivo descargado (o el que se le envie por línea de comandos), traduce la secuencia teniendo en cuenta el marco de lectura correcto (verificando previamente que sea válida), y finalmente generar un nuevo archivo en formato fasta con el resultado.
+
+Funcionamiento:
+Desde línea de comandos ingresar:
+	> perl Ex1.pm [archivo_genBank]
+
+El parámetro [archivo_genBank] es opcional y se refiere al nombre de algún archivo de tipo genbank.
+Si no se especifica ninguno, el programa automáticamente buscará el archivo "sequence.gb". En caso de no encontrarlo, o que el archivo indicado no exista, el programa fallará.
+Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuevo archivo con el mismo nombre que el utilizado como Input, pero con extensión "*.fas".
+
+
+Ej_1:
+> perl Ex1.pm insulina.gb
+
+* El programa buscará (en la misma carpeta) un archivo llamado "insulina.gb" y lo utilizará.
+Como resultado se generará el archivo "insulina.gb.fas".
+
+
+Ej_2:
+> perl Ex1.pm
+
+* Al no indicarse ningún archivo específico, el programa buscará automaticamente el archivo "sequence.gb" y lo utilizará.
+Como resultado se generará el archivo "sequence.gb.fas".
+
+ 
