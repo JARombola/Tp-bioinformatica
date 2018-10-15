@@ -1,48 +1,64 @@
 <meta charset="utf-8" />
 
-<body style="background-color: snow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-	<h1>Ejercicio 1</h1>
-	<h2>Desarrollo:</h2>
+<body style="background-color: snow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.5">
+	<h1>Ejercicio 1: Procesamiento de secuencias</h1>
+	<h2>Desarrollo</h2>
 	<p>Lo primero que hicimos fue determinar un gen a utilizar, en este caso fue el <b>HLA-DQA1</b> que se encuentra
 		relacionado por ejemplo con la <i>celiaquía</i>.</p>
-		<p>Luego, en la base de datos del NCBI <i>(National Center for Biotechnology Information)</i> consultamos las
-			secuencias de referencia, seleccionamos uno de los mRNA <b>(NM_002122.3)</b> y descargamos el transcripto del gen en
-			formato <i>GenBank</i>.</p>
-			<p>A continuación realizamos el script que hace lo siguiente:</p>
-			<p>Utiliza el archivo descargado (o el que se le envie por línea de comandos), traduce la secuencia teniendo en
-				cuenta el marco de lectura correcto (verificando previamente que sea válida), y finalmente genera un nuevo archivo
-				en formato <i>fasta</i> con el resultado.
-			</p>
+	<p>Luego, en la base de datos del NCBI <i>(National Center for Biotechnology Information)</i> consultamos las
+		secuencias de referencia, seleccionamos uno de los mRNA <b>(NM_002122.3)</b> y descargamos el transcripto del gen en
+		formato <i>GenBank</i>.</p>
+	<p>A continuación realizamos el script que hace lo siguiente:</p>
+	<p>Utiliza el archivo descargado (o el que se le envie por línea de comandos), traduce la secuencia teniendo en
+		cuenta el marco de lectura correcto (verificando previamente que sea válida), y finalmente genera un nuevo archivo
+		en formato <i>fasta</i> con el resultado.
+	</p>
 
-			<h2>Funcionamiento:</h2>
-			<p>Desde línea de comandos ingresar:</p>
-			<code> > perl Ex1.pm [archivo_genBank] </code>
-			<p>
-				<li>El parámetro <code><i>[archivo_genBank]</i></code> es opcional y se refiere al nombre de algún archivo de tipo
-					<i>genbank</i>.
-					Si no se especifica ninguno, el programa automáticamente buscará el archivo <b>"sequence.gb"</b>.</li>
-				En caso de no encontrarlo, o que el archivo indicado no exista, el programa fallará.
-			</p>
-			<p>Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuevo archivo con el mismo nombre que
-				el utilizado como Input, pero con extensión ".fas".
-			</p>
-			<hr>
+	<h2>Funcionamiento</h2>
+	<p>Desde línea de comandos ingresar:</p>
+	<code> > perl Ex1.pm [--f archivo_GenBank] </code>
+	<ul>
+		<li>
+			<h3>Parámetros</h3>
+		</li>
+		<p>
+			<code>--f archivo_fasta</code>: Archivo de tipo genbank utilizado como input. <i>(Default: 'sequence.gb')</i>
+			[Opcional]
+		</p>
+		<li>
+			<h3>Input</h3>
+		</li>
+		Archivo en formato GenBank.
+		<li>
+			<h3>Output</h3>
+		</li>
+		Archivo en formato Fasta.
+		<p>Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuevo archivo con el mismo nombre que
+			el utilizado como Input, pero con extensión "*.fas".
+		</p>
+	</ul>
+	<hr>
+	<h2>Ejemplos</h2>
+	<ul>
+		<h3>
+			<li>Ejemplo 1 </li>
+		</h3>
+		<code> > perl Ex1.pm </code>
 
-			<h3><li>Ejemplo 1: </li> </h3>
-			<code> > perl Ex1.pm <u>insulina.gb</u> </code>
+		<p>
+			- Al no indicarse ningún archivo específico, el programa buscará automaticamente el archivo "<u>sequence.gb</u>"
+			y lo utilizará.
+			Como resultado se generará el archivo <b>"sequence.fas"</b>.
+		</p>
 
-			<p>
-				- El programa buscará (en la misma carpeta) un archivo llamado "<u>insulina.gb</u>" y lo utilizará.
-			</p>
-			Como resultado se generará el archivo <b>"insulina.gb.fas"</b>.
+		<h3>
+			<li>Ejemplo 2 </li>
+		</h3>
+		<code> > perl Ex1.pm <u>--f insulina.gb</u> </code>
 
-
-			<h3><li>Ejemplo 2: </li> </h3>
-			<code> > perl Ex1.pm </code>
-
-			<p>
-				- Al no indicarse ningún archivo específico, el programa buscará automaticamente el archivo "<u>sequence.gb</u>""
-					y lo utilizará.
-				Como resultado se generará el archivo <b>"sequence.gb.fas"</b>.
-			</p>
+		<p>
+			- El programa buscará (en la misma carpeta) un archivo llamado "<u>insulina.gb</u>" y lo utilizará.
+		</p>
+		Como resultado se generará el archivo <b>"insulina.fas"</b>.
+	</ul>
 </body>

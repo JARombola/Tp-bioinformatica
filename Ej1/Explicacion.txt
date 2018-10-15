@@ -1,29 +1,37 @@
-Desarrollo:
-Lo primero que hicimos fue determinar un gen a utilizar, en este caso fue el HLA-DQA1 que se encuentra relacionado por ejemplo con la celiaquÌa.
+EJERCICIO 1: PROCESAMIENTO DE SECUENCIAS
+
+- Desarrollo:
+Lo primero que hicimos fue determinar un gen a utilizar, en este caso fue el HLA-DQA1 que se encuentra relacionado por ejemplo con la celiaqu√≠a.
 Luego, en la base de NCBI (National Center for Biotechnology Information) consultamos las secuencias de referencia, seleccionamos uno de los mRNA (NM_002122.3) y descargamos el transcripto del gen en formato GenBank.
-A continuaciÛn realizamos el script que hace lo siguiente:
-Utiliza el archivo descargado (o el que se le envie por lÌnea de comandos), traduce la secuencia teniendo en cuenta el marco de lectura correcto (verificando previamente que sea v·lida), y finalmente generar un nuevo archivo en formato fasta con el resultado.
+A continuaci√≥n realizamos el script que hace lo siguiente:
+Utiliza el archivo descargado (o el que se le envie por l√≠nea de comandos), traduce la secuencia teniendo en cuenta el marco de lectura correcto (verificando previamente que sea v√°lida), y finalmente generar un nuevo archivo en formato fasta con el resultado.
 
-Funcionamiento:
-Desde lÌnea de comandos ingresar:
-	> perl Ex1.pm [archivo_genBank]
+- Funcionamiento:
+Desde l√≠nea de comandos ingresar:
+	> perl Ex1.pm [--f archivo_GenBank]
 
-El par·metro [archivo_genBank] es opcional y se refiere al nombre de alg˙n archivo de tipo genbank.
-Si no se especifica ninguno, el programa autom·ticamente buscar· el archivo "sequence.gb". En caso de no encontrarlo, o que el archivo indicado no exista, el programa fallar·.
-Si el script logra ejecutarse correctamente, como resultado se obtendr· un nuevo archivo con el mismo nombre que el utilizado como Input, pero con extensiÛn "*.fas".
+ + Par√°metros:
+	--f archivo_fasta: Archivo de tipo genbank utilizado como input. (Default: 'sequence.gb'); [Opcional]
 
+ + Input:
+	Archivo en formato GenBank.
 
-Ej_1:
-> perl Ex1.pm insulina.gb
+ + Output:
+	Archivo en formato Fasta.
+Si el script logra ejecutarse correctamente, como resultado se obtendr√° un nuevo archivo con el mismo nombre que el utilizado como Input, pero con extensi√≥n "*.fas".
 
-* El programa buscar· (en la misma carpeta) un archivo llamado "insulina.gb" y lo utilizar·.
-Como resultado se generar· el archivo "insulina.gb.fas".
+-------------------------------------------------------------------------------------------------------------------------------
 
-
-Ej_2:
+Ejemplo 1:
 > perl Ex1.pm
 
-* Al no indicarse ning˙n archivo especÌfico, el programa buscar· automaticamente el archivo "sequence.gb" y lo utilizar·.
-Como resultado se generar· el archivo "sequence.gb.fas".
+* Al no indicarse ning√∫n archivo espec√≠fico, el programa buscar√° y utilizar√° automaticamente el archivo "sequence.gb".
+Como resultado se generar√° el archivo "sequence.fas".
 
+
+Ejemplo 2:
+> perl Ex1.pm --f insulina.gb
+
+* El programa buscar√° (en la misma carpeta) un archivo llamado "insulina.gb" y lo utilizar√°.
+Como resultado se generar√° el archivo "insulina.fas".
  
