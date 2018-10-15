@@ -25,7 +25,7 @@ while (my $seq = $input_file->next_seq) {   # Lee cada secuencia del archivo Inp
     if(!$seq->validate_seq($seq->seq)) {    # Valida la secuencia
         die "************ ERROR: SECUENCIA INVALIDA";
     }
-    my $traduccion = $seq->translate(-orf => 1, complete => 1, -start => 'atg', -throw => 1); # Traduce a amino ácidos
+    my $traduccion = $seq->translate(-orf => 1, -complete => 1, -start => 'atg', -throw => 1); # Traduce a amino ácidos
     $output_file->write_seq($traduccion);   # Escribe la traducción en el archivo
     print "> Secuencia: ", "\n", $traduccion->seq, "\n";     # Imprime por pantalla cada traducción
 }
