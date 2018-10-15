@@ -1,0 +1,76 @@
+<meta charset="utf-8" />
+
+<body style="background-color: snow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.5">
+
+    <h1>Ejercicio 2: Blast</h1>
+
+    <h2>Desarrollo</h2>
+    <p>Lo que hicimos fue utilizar el archivo fasta obtenido como resultado del ejercicio 1, como input de este segundo
+        ejercicio.</p>
+    <p>De esta manera, el script se encarga de realizar un Blast (local o remoto) sobre la secuencia ingresada, y crear
+        un nuevo archivo con los resultados obtenidos.</p>
+    <p>Además, para controlar que los resultados sean correctos, verificamos que sean iguales a los obtenidos
+        realizando el Blast directamente en la web del NCBI <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">https://blast.ncbi.nlm.nih.gov/Blast.cgi</a>.</p>
+
+    <h2>Funcionamiento</h2>
+    <p>Desde línea de comandos ingresar: </p>
+    <code>> perl Ex2.pm [--f archivo_fasta] [--db base_de_datos] [--l] </code>
+    <ul>
+        <li>
+            <h3>Parámetros</h3>
+        </li>
+        <p><code>--f: </code> Archivo fasta utilizado como input. (<u>Default</u>: 'sequence.fasta').</p>
+        <p><code>--db: </code> Base de datos a consultar. (<u>Default</u>: 'nr').</p>
+        <p><code>--l: </code> Indica que la base de datos es local. (<u>Default</u>: false).</p>
+        <p> * Todos son <b>opcionales</b>.</p>
+
+        <li>
+            <h3>Input</h3>
+        </li>
+        <p>Archivo en formato Fasta.</p>
+
+        <li>
+            <h3>Output</h3>
+        </li>
+        <p>Archivo en formato Blast (Texto plano).</p>
+        <p>Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuevo archivo con el mismo nombre
+            que el utilizado como Input, pero con extensión "*.blast".</p>
+    </ul>
+
+    <hr>
+    <h2>Ejemplos</h2>
+    <ul>
+        <h3>
+            <li>Ejemplo 1 </li>
+        </h3>
+        <code>> perl Ex2.pm </code>
+
+        <p>* Al no indicarse ningún archivo específico, el programa buscará y utilizará automaticamente el archivo
+            "sequence.fas" con la base de datos remota "nr".
+            Como resultado se generará el archivo "sequence.blast".</p>
+
+        <h3>
+            <li>Ejemplo 2 </li>
+        </h3>
+
+        <code>> perl Ex2.pm --f insulina.fas --db base_a_consultar</code>
+
+        <p>* El programa utilizará como input el archivo "insulina.fas", y consultará la base remota
+            "base_a_consultar".
+        </p>
+        <h3>
+            <li>Ejemplo 3 </li>
+        </h3>
+
+        <code>> perl Ex2.pm --f insulina.fas --l</code>
+
+        <p>* El programa utilizará como input el archivo "insulina.fas", y consultará la base local default ("nr").
+        </p>
+    </ul>
+    <hr>
+    <!-- TODO -->
+    <h2>Interpretación de resultados</h2>
+    <p>
+        .........
+    </p>
+</body>
