@@ -16,7 +16,7 @@ use Getopt::Long;
 
 
 my $file_name = 'sequence.fas';     # Nombre del archivo por default: 'sequence.fas'. 
-my $db = 'nr';                    # Base de datos por default: nr
+my $db = 'swissprot';                    # Base de datos por default: swissprot
 my $local = 0;
 # Verifica opciones de línea de comandos
 GetOptions ('f=s' => \$file_name,   # string: Nombre del archivo
@@ -38,6 +38,6 @@ my $blast = Bio::Tools::Run::StandAloneBlastPlus->new(
 );
 
 print 'Procesando...';
-my $result = $blast->blastp( -query => $file_name, -outfile => $output_file_name, -outformat => 5);
+my $result = $blast->blastp( -query => $file_name, -outfile => $output_file_name, -outformat => 7);
 $blast->cleanup;
 print "Terminado! \n Resultados en: $output_file_name \n";

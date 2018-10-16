@@ -11,7 +11,7 @@ Desde línea de comandos ingresar:
 
  + Parámetros:
     --f: Archivo fasta utilizado como input. (Default: 'sequence.fasta').
-    --db: Base de datos a consultar. (Default: 'nr').
+    --db: Base de datos a consultar. (Default: 'swissprot').
     --l: Indica que la base de datos es local. (Default: false).
 Todos son opcionales.
 
@@ -27,7 +27,7 @@ Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuev
 Ejemplo 1:
 > perl Ex2.pm
 
-* Al no indicarse ningún archivo específico, el programa buscará y utilizará automaticamente el archivo "sequence.fas" con la base de datos remota "nr".
+* Al no indicarse ningún archivo específico, el programa buscará y utilizará automaticamente el archivo "sequence.fas" con la base de datos remota "swissprot".
 Como resultado se generará el archivo "sequence.blast".
 
 Ejemplo 2:
@@ -38,4 +38,4 @@ Ejemplo 2:
 Ejemplo 3:
 > perl Ex2.pm --f insulina.fas --l
 
-* El programa utilizará como input el archivo "insulina.fas", y consultará la base local default ("nr").
+* El programa utilizará como input el archivo "insulina.fas", y consultará la base local default ("swissprot").
