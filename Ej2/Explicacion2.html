@@ -1,0 +1,176 @@
+<meta charset="utf-8" />
+
+<body style="background-color: snow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.5">
+
+    <h1>Ejercicio 2.a: Blast</h1>
+
+    <h2>Desarrollo</h2>
+    <p>Lo que hicimos fue utilizar el archivo fasta obtenido como resultado del ejercicio 1, como input de este segundo
+        ejercicio.</p>
+    <p>De esta manera, el script se encarga de realizar un Blast (local o remoto) sobre la secuencia ingresada, y crear
+        un nuevo archivo con los resultados obtenidos.</p>
+    <p>Además, para controlar que los resultados sean correctos, verificamos que sean iguales a los obtenidos
+        realizando el Blast directamente en la web del NCBI <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">https://blast.ncbi.nlm.nih.gov/Blast.cgi</a>.</p>
+
+    <h2>Funcionamiento</h2>
+    <p>Desde línea de comandos ingresar: </p>
+    <code>> perl Ex2.pm [--f archivo_fasta] [--db base_de_datos] [--l] </code>
+    <ul>
+        <li>
+            <h3>Parámetros</h3>
+        </li>
+        <p><code>--f: </code> Archivo fasta utilizado como input. (<u>Default</u>: '<a href="./sequence.fas" target="_blank">sequence.fas</a>').</p>
+        <p><code>--db: </code> Base de datos a consultar. (<u>Default</u>: 'swissprot').</p>
+        <p><code>--l: </code> Indica que la base de datos es local. (<u>Default</u>: false).</p>
+        <p> * Todos son <b>opcionales</b>.</p>
+
+        <li>
+            <h3>Input</h3>
+        </li>
+        <p>Archivo en formato Fasta.</p>
+
+        <li>
+            <h3>Output</h3>
+        </li>
+        <p>Archivo en formato Blast (Texto plano).</p>
+        <p>Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuevo archivo con el mismo nombre
+            que el utilizado como Input, pero con extensión "*.blast".</p>
+    </ul>
+
+    <hr>
+    <h2>Ejemplos</h2>
+    <ul>
+        <h3>
+            <li>Ejemplo 1 </li>
+        </h3>
+        <code>> perl Ex2.pm </code>
+
+        <p>* Al no indicarse ningún archivo específico, el programa buscará y utilizará automaticamente el archivo
+            "sequence.fas" con la base de datos remota "swissprot".
+            Como resultado se generará el archivo "sequence.blast".</p>
+
+        <h3>
+            <li>Ejemplo 2 </li>
+        </h3>
+
+        <code>> perl Ex2.pm --f insulina.fas --db base_a_consultar</code>
+
+        <p>* El programa utilizará como input el archivo "insulina.fas", y consultará la base remota
+            "base_a_consultar".
+        </p>
+        <h3>
+            <li>Ejemplo 3 </li>
+        </h3>
+
+        <code>> perl Ex2.pm --f insulina.fas --l</code>
+
+        <p>* El programa utilizará como input el archivo "insulina.fas", y consultará la base local default
+            ("swissprot").
+        </p>
+    </ul>
+    <hr>
+
+    <!-- -----------------------------------------------------------------------    EJERCICIO 2.b   -----------------------------------------------------------------------  -->
+
+    <h1>Ejercicio 2.b: Interpretación de resultados</h1>
+    <p>
+        En el archivo obtenido como resultado (<a href="./sequence.blast" target="_blank">sequence.blast</a>) podemos
+        apreciar aquellas proteinas que se alinearon con la nuestra. Algunas obtuvieron mejores resultados, mientras
+        que otras tal vez sean menos significativas.
+    </p>
+    <ul>
+        <p>
+            <li>Entre ellas, la <b>primera</b> que aparece (<a href="./HomoSapiens.PNG" target="_blank">Accession
+                    P01909.1</a>), notamos que tiene un
+                alineamiento de
+                89.02%. Se trata del gen HLA-DQA2, que al igual que el nuestro (HLA-DQA1) también se encuentra
+                relacionado con
+                la enfermedad seleccionada (celiaquía).</li>
+        </p>
+
+        <table style="width:100%">
+            <tr style="text-align: left">
+                <th>Score</th>
+                <th>Expect</th>
+                <th>Method</th>
+                <th>Identities</th>
+                <th>Positives</th>
+                <th>Gaps</th>
+            </tr>
+            <tr>
+                <td>442 bits(1136)</td>
+                <td>3e-158</td>
+                <td>Compositional matrix adjust.</td>
+                <td>213/239(89%)</td>
+                <td>221/239(92%)</td>
+                <td>0/239(0%)</td>
+            </tr>
+        </table>
+        <p>Estos resultados indican que 213 aminoácidos tuvieron coincidencia exacta, hubieron 8 que tuvieron
+            modificaciones mínimas manteniendo las mismas propiedades químicas, y no hubieron gaps.</p>
+
+        <p>
+            <li>Analizando otro caso (<a href="./NorwayRat.PNG" target="_blank">P20037.1</a>), con una longitud de 254:
+            </li>
+        </p>
+
+        <table style="width:100%">
+            <tr style="text-align: left">
+                <th>Score</th>
+                <th>Expect</th>
+                <th>Method</th>
+                <th>Identities</th>
+                <th>Positives</th>
+                <th>Gaps</th>
+            </tr>
+            <tr>
+                <td>404 bits(1038)</td>
+                <td>3e-143</td>
+                <td>Compositional matrix adjust.</td>
+                <td>189/256(74%)</td>
+                <td>220/256(85%)</td>
+                <td>1/256(0%)</td>
+            </tr>
+        </table>
+        <p>Podemos notar, por ejemplo, que la cantidad de coincidencias exactas es menor (189/256), que se introdujo 1
+            gap, y que el score es menor que el de la secuencia anterior. </p>
+        <p>Este <b>bit score</b> puede utilizarse para comparar diferentes alineaciones. De forma que mayor puntaje
+            indica mejor alineación.</p>
+        <p>Por otro lado, un parámetro importante a tener en cuenta es el <b>Expect</b> (e-value), que se refiere a la
+            probabilidad de que las secuencias coincidan por pura casualidad. Es decir, cuanto menor sea el valor E,
+            menor será la probabilidad de que la coincidencia de la base de datos sea el resultado de una casualidad
+            aleatoria y, por lo tanto, más <b>significativa</b> será la coincidencia. </p>
+        <p>
+            <li>Analizando los resultados correspondientes a la secuencia <a href="./horse.PNG" target="_blank">P30441.1</a>:
+            </li>
+        </p>
+        <table style="width:100%">
+            <tr style="text-align: left">
+                <th>Score</th>
+                <th>Expect</th>
+                <th>Method</th>
+                <th>Identities</th>
+                <th>Positives</th>
+                <th>Gaps</th>
+            </tr>
+            <tr>
+                <td>69.3 bits(168)</td>
+                <td>8e-14</td>
+                <td>Compositional matrix adjust.</td>
+                <td>35/101(35%)</td>
+                <td>54/101(53%)</td>
+                <td>2/101(1%)</td>
+            </tr>
+        </table>
+
+        <p>El gen relacionado se encuentra en caballos, y, por el alto valor del Expect, inicialmente podemos llegar a
+            pensar que se trata de una coincidencia, y que las secuencias no están relacionadas o la relación entre
+            ellas es extremadamente distante.</p>
+        <p>Además, su bit score es bastante bajo, al igual que la cantidad de coincidencias detectadas. De forma que
+            todos estos valores son congruentes.</p>
+    </ul>
+    <h2>Conclusión</h2>
+    <p>Finalmente podemos concluir que altas coincidencias entre las secuencias se refieran a funciones similares,
+        aunque se trate de distintas especies, ya que se trataría de la misma proteína (o muy similar). E incluso
+        podrían indicar alguna clase de parentesco evolutivo entre estas especies. </p>
+</body>
