@@ -1,0 +1,81 @@
+<meta charset="utf-8" />
+
+<body style="background-color: snow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.5">
+
+    <h1>Ejercicio 4: Blast output</h1>
+
+    <h2>Desarrollo</h2>
+    <p>Lo que hicimos fue utilizar el archivo <a href="./sequence.blast" target="_blank">blast</a> obtenido del
+        ejercicio 2, como input para este ejercicio.</p>
+    <p>El script se encarga de detectar, de dichos resultados, aquellos hits en cuya <b>descripción</b> se encuentre el
+        patrón que sea indicado como parámetro.</p>
+    <p>Además, en base al <b>accession code</b> de estos hits <i>(que coincidieron con el pattern)</i>, se encarga de
+        obtener sus secuencias completas
+        y crear un archivo en formato FASTA para cada uno de ellos.</p>
+
+    <h2>Funcionamiento</h2>
+    <p>Desde línea de comandos ingresar: </p>
+    <code>> perl Ex4.pm [--f archivo_blast] [--p pattern] [--cs] </code>
+    <ul>
+        <li>
+            <h3>Parámetros</h3>
+        </li>
+        <p><code>--f: </code> Archivo blast utilizado como input. (<u>Default</u>: '<a href="./sequence.blast" target="_blank">sequence.blast</a>').</p>
+        <p><code>--p: </code> Pattern a detectar</p>
+        <p><code>--cs: </code> Indica si la búsqueda será case-sensitive, es decir, teniendo en cuenta mayúsculas y
+            minúsculas. (<u>Default</u>: false).</p>
+        <p> * El único parámetro obligatorio es el <b>patrón</b></p>
+
+        <li>
+            <h3>Input</h3>
+        </li>
+        <p>Archivo en formato Blast.</p>
+
+        <li>
+            <h3>Output</h3>
+        </li>
+        <p>Archivos en formato Fasta.</p>
+        <p>Si el script logra ejecutarse correctamente, como resultado se obtendrá, para cada coincidencia detectada,
+            un archivo Fasta con el accession code como nombre del mismo. <i>(AccessionCode.fas)</i></p>
+    </ul>
+
+    <hr>
+    <h2>Ejemplos</h2>
+    <ul>
+        <h3>
+            <li>Ejemplo 1 </li>
+        </h3>
+        <code>> perl Ex4.pm --p Tapasin</code>
+
+        <p>* Al no indicarse ningún archivo específico, el programa buscará y utilizará automaticamente el archivo
+            "sequence.blast". Al no indicarse el flag <b>--cs</b>, no se tendrán en cuenta las mayúsculas ni
+            minúsculas.
+            Como resultado se generarán tantos archivos como coincidencias encontradas.</p>
+        <p>En este caso existen 3 coincidencias: Q9BX59.2, Q5R8H1.2, O73895.2, cuyos respectivos archivos serán:</p>
+        <ul>
+            <li><a href="./Q9BX59.2.fas" target="_blank">Q9BX59.2.fas</a></li>
+            <li><a href="./Q5R8H1.2.fas" target="_blank">Q5R8H1.2.fas</a></li>
+            <li><a href="./O73895.2.fas" target="_blank">O73895.2.fas</a></li>
+
+        </ul>
+
+        <h3>
+            <li>Ejemplo 2 </li>
+        </h3>
+
+        <code>> perl Ex4.pm --p TaPAsIn --cs</code>
+
+        <p>* Nuevamente el programa utilizará como input el archivo "sequence.blast". Pero en este caso, la búsqueda
+            será case-sensitive. Al no encontrar coincidencias, no generará ningún archivo.
+        </p>
+        <h3>
+            <li>Ejemplo 3 </li>
+        </h3>
+
+        <code>> perl Ex4.pm --f otroArchivo.blast --p Arabidopsis</code>
+
+        <p>* El programa utilizará como input el archivo "otroArchivo.blast", y detecctará aquellos hits en cuya
+            descripción se encuentre el patrón "Arabidopsis", sin hacer distinción entre mayúsculas y minúsculas.
+        </p>
+    </ul>
+</body>
