@@ -38,6 +38,6 @@ my $blast = Bio::Tools::Run::StandAloneBlastPlus->new(
 );
 
 print 'Procesando...';
-my $result = $blast->blastp( -query => $file_name, -outfile => $output_file_name, -outformat => 7);
+my $result = $blast->blastp( -query => $file_name, -outfile => $output_file_name);
 $blast->cleanup;
 print "Terminado! \n Resultados en: $output_file_name \n";
