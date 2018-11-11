@@ -1,0 +1,36 @@
+<meta charset="utf-8" />
+
+<body
+  style="background-color: snow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.5"
+>
+  <h1>Ejercicio 5: EMBOSS</h1>
+
+  <h2>Desarrollo</h2>
+  <p>
+    Primero que nada, descargamos los archivos prosite.dat y prosite.doc de la pagina de EMBOSS.
+    Luego, bajamos el programa EMBOSS en sí usando apt-get, descargándolo de los repositorios de Ubuntu.
+  </p>
+  <p>
+    Para este ejercicio decidimos correr los comandos de EMBOSS directamente desde la linea de comandos, ya que la complejidad del ejercicio no ameritaba escribir un programa específicamente para ello.
+    Dado que EMBOSS presenta comandos listos que pueden correrse por consola, cualquier programa que podamos hacer nosotros para correrlos no sería más que un wrapper innecesario.
+  </p>
+  <p>
+    Usamos <code>transeq NM_002122.3.fas -frame 6</code> para calcular las proteinas correspondientes a los 6 posibles marcos de lectura.
+    Nos dio el mismo resultado que en el ejercicio 1, por lo que sabemos que salió bien.
+    El resultado de ese comando está en el archivo <code>nm_002122.pep</code>.
+  </p>
+  <p>
+    Luego corrimos <code>prosextract</code> desde el mismo directorio donde tenemos el <code>prosite.dat</code> y <code>prosite.doc</code> para procesar los datos y poder usarlos para entontrar motivos luego.
+    Corrimos <code>patmatmotifs NM_002122.3.fas</code> y obtuvimos como resultado el archivo <code>nm_002122.patmatmotifs</code>.
+    En ese archivo podemos notar que hubo 10 hits, siendo el mayor de longitud 52.
+  </p>
+  <p>
+    Los motivos incluyen:
+    <ul>
+        <li>EGF_1</li>
+        <li>HYDROPHOBIN</li>
+        <li>ANAPHYLATOXIN_1</li>
+        <li>VWFC_1</li>
+    </ul>
+  </p>
+</body>

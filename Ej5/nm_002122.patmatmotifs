@@ -1,0 +1,123 @@
+########################################
+# Program: patmatmotifs
+# Rundate: Sun 11 Nov 2018 01:12:04
+# Commandline: patmatmotifs
+#    [-sequence] NM_002122.3.fas
+# Report_format: dbmotif
+# Report_file: nm_002122.patmatmotifs
+########################################
+
+#=======================================
+#
+# Sequence: NM_002122.3     from: 1   to: 1542
+# HitCount: 10
+#
+# Full: No
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 12
+Start = position 333 of sequence
+End = position 344 of sequence
+
+Motif = EGF_1
+
+CAAAACACAACTTGAACATCAT
+     |          |
+   333          344
+
+Length = 12
+Start = position 296 of sequence
+End = position 307 of sequence
+
+Motif = EGF_1
+
+TTTGACCCGCAGGGTGCACTGA
+     |          |
+   296          307
+
+Length = 12
+Start = position 87 of sequence
+End = position 98 of sequence
+
+Motif = EGF_1
+
+GGGCCCTCGCTCTGACCACCGT
+     |          |
+    87          98
+
+Length = 12
+Start = position 572 of sequence
+End = position 583 of sequence
+
+Motif = HYDROPHOBIN
+
+TTCAAGATCAGTTACCTCACCT
+     |          |
+   572          583
+
+Length = 35
+Start = position 1249 of sequence
+End = position 1283 of sequence
+
+Motif = ANAPHYLATOXIN_1
+
+ATTTCCCAGATCATTTTTCATGTCCAGTAACACAGAAGCCACCAA
+     |                                 |
+  1249                                 1283
+
+Length = 36
+Start = position 1248 of sequence
+End = position 1283 of sequence
+
+Motif = ANAPHYLATOXIN_1
+
+CATTTCCCAGATCATTTTTCATGTCCAGTAACACAGAAGCCACCAA
+     |                                  |
+  1248                                  1283
+
+Length = 33
+Start = position 638 of sequence
+End = position 670 of sequence
+
+Motif = ANAPHYLATOXIN_1
+
+TGGGGCCTGGACCAGCCTCTTCTGAAACACTGGGAGCCTGAGA
+     |                               |
+   638                               670
+
+Length = 46
+Start = position 888 of sequence
+End = position 933 of sequence
+
+Motif = VWFC_1
+
+ATGACCTAGCACTATTCTCTGGCCCGATTTATCATATCCCTTTTCTCCTCCAAATA
+     |                                            |
+   888                                            933
+
+Length = 54
+Start = position 542 of sequence
+End = position 595 of sequence
+
+Motif = VWFC_1
+
+AGCTTCCTCTCCAAGAGTGATCATTCCTTCTTCAAGATCAGTTACCTCACCTTCCTCCCTTCTG
+     |                                                    |
+   542                                                    595
+
+Length = 53
+Start = position 539 of sequence
+End = position 591 of sequence
+
+Motif = VWFC_1
+
+ACCAGCTTCCTCTCCAAGAGTGATCATTCCTTCTTCAAGATCAGTTACCTCACCTTCCTCCCT
+     |                                                   |
+   539                                                   591
+
+
+#---------------------------------------
+#---------------------------------------
