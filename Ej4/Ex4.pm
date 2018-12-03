@@ -10,8 +10,8 @@ my $input = 'sequence.blast';     # Nombre del archivo por default: 'sequence.bl
 my $caseSensitive = 0;
 my $pattern;
 GetOptions ('f=s' => \$input,       # string: Nombre del archivo
-            'p=s' => \$pattern,
-            'cs' => \$caseSensitive);    # string: Pattern a buscar
+            'p=s' => \$pattern,     # string: Pattern a buscar
+            'cs' => \$caseSensitive);    # Boolean: CaseSensitive (Default: false)
 
 print '- Input: ', $input, "\n";
 

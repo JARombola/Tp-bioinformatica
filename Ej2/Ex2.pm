@@ -3,7 +3,7 @@
 # Usar 'perl ex2.pm [--f archivo] [--db base_de_datos] [--l] 
 # Todos los parametros son opcionales:
 # - Archivo input default: 'sequence.fas';
-# - Base de datos default: 'nr';
+# - Base de datos default: 'swissprot';
 # - Remota
 
 use strict;
